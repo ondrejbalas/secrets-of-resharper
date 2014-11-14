@@ -1,0 +1,267 @@
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Initialize field or auto-property from constructor parameter
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Encapsulate field
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Convert to auto-property (in file, project, solution)
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Create interface (or nested interface)
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Rename things that don't follow naming conventions
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Create Derived Type
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Move to another file to match type name
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Move declarations to namespace
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Add using statements (And still shows up in code completion)
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Remove unused using statements (in file, project, solution)
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Import types for pasted code
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Remove redundant qualifiers (in file, project, solution)
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Remove or add braces. When adding, highlight what you want surrounded with braces
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Convert a foreach to a LINQ expression [ftlinq]
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Copy to local variable (when using a foreach variable in a closure) [ctlocal]
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Implement interface
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Implement special interfaces (INotifyPropertyChanged)
+
+
+Section: Context Actions (Quick Fix)
+Hotkey: Alt+Enter
+Description: Convert to property with change notification
+
+
+Section: Search && Navigation
+Hotkey: Shift+Alt+F12
+Description: Usages of Symbol
+
+
+Section: Search && Navigation
+Hotkey: Shift+F12
+Description: Find usages of symbol
+
+
+Section: Search && Navigation
+Hotkey: Ctrl+T
+Description: Go to Anything. (Wildcards, partial words, line number)
+
+
+Section: Search && Navigation
+Hotkey: Ctrl+Shift+T
+Description: Go to File or folder
+
+
+Section: Search && Navigation
+Hotkey: Shift+Alt+T
+Description: Go to Symbol
+
+
+Section: Search && Navigation
+Hotkey: Alt+\
+Description: Go To Member in current file
+
+
+Section: Search && Navigation
+Hotkey: Ctrl+Alt+Arrow
+Description: Expand Selection or Shrink Selection
+
+
+Section: Search && Navigation
+Hotkey: Ctrl+,
+Description: Recent Files
+
+
+Section: Search && Navigation
+Hotkey: Ctrl+Shift+,
+Description: Recent Edits
+
+
+Section: Search && Navigation
+Hotkey: Ctrl+Shift+BkSpc
+Description: Previous Edit
+
+
+Section: Search && Navigation
+Hotkey: Ctrl+Alt+F7
+Description: Related Files
+
+
+Section: Search && Navigation
+Hotkey: Shift+Alt+L
+Description: Locate in solution explorer. I find this especially helpful when working on web projects where I bounce around between js files.
+
+
+Section: Refactorings
+Hotkey: Ctrl+R,R
+Description: Rename. VS has this refactoring as well but R# improves on it by being able to rename related things (like properties, interfaces, inheritors, etc.)
+
+
+Section: Refactorings
+Hotkey: Ctrl+R,M
+Description: Extract Method. 
+
+
+Section: Refactorings
+Hotkey:  
+Description: Extract Class [exclass]
+
+
+Section: Refactorings
+Hotkey:  
+Description: Extract Interface
+
+
+Section: Refactorings
+Hotkey: Ctrl+R,O
+Description: Move File (or folder). Allows you to move files and folders while applying rename refactorings and checking for broken usages.
+
+
+Section: Refactorings
+Hotkey: Ctrl+R,D
+Description: Safe Delete. Deletes a file if it isn't being used anywhere in the solution
+
+
+Section: Refactorings
+Hotkey: Ctrl+Shift+R
+Description: (Refactor This...) Pull Members Up. Allows you to add an object's members to an abstraction that it is inheriting from.
+
+
+Section: Refactorings
+Hotkey: Ctrl+R,V
+Description: Introduce Variable. Helps simplify complex expressions by refactoring pieces of them into a variable [intvar]
+
+
+Section: Refactorings
+Hotkey: Ctrl+R,F
+Description: Introduce Field. Like "Introduce Variable" but introduces a field at the class level instead. Can be used to create a constant too.
+
+
+Section: Edits
+Hotkey: Ctrl+Shift+Alt+Arrow
+Description: Rearrange lines of code, blocks, methods, parameters, etc. Can even be used to move bits of code into/out of blocks.
+
+
+Section: Edits
+Hotkey: Ctrl+D
+Description: Duplicate the current selection, or the current line if nothing is selected
+
+
+Section: Code Generation
+Hotkey: Alt+Insert
+Description: Constructor. After adding properties to a class, use the constructor generator to assign the properties from the constructor. snippet: ctorf (ctor from fields) or ctorp (ctor from properties) or ctorfp (both)
+
+
+Section: Code Generation
+Hotkey: Alt+Insert
+Description: Delegation members. When implementing the adapter pattern for an existing object, this can be used to write all the boilerplate code to forward those calls to the implementation.
+
+
+Section: Code Generation
+Hotkey: Alt+Insert
+Description: Equality members
+
+
+Section: Code Generation
+Hotkey: Alt+Insert
+Description: Equality comparer
+
+
+Section: Coding Assistance
+Hotkey:  
+Description: Smart Completion with camel humps, auto-add using statements
+
+
+Section: Coding Assistance
+Hotkey:  
+Description: Highlights matching braces and quotes
+
+
+Section: Other Cool Stuff
+Hotkey: Ctrl+Shift+V
+Description: Paste recent clipboard items. Resharper > Edit > Paste...
+
+
+Section: Other Cool Stuff
+Hotkey:  
+Description: nguid tab
+
+
+Section: Other Cool Stuff
+Hotkey: Ctrl+Shift+F1
+Description: Show Quick Documentation. Shows some information and also links directly to MSDN.
+
+Section: Annotations
+Hotkey:  
+Description: [CanBeNull] Attribute on a method
+
+
+Section: Annotations
+Hotkey:  
+Description: [NotNull] Attribute on a parameter
+
+
+Section: Annotations
+Hotkey:  
+Description: [StringFormatMethod]
+
+
+Section: Code Cleanup
+Hotkey: Ctrl+E,Ctrl+C
+Description: The Code Cleanup option allows to apply some context actions to the entire project/solution. Can be applied to file, folder, project, or solution.

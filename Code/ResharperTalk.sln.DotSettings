@@ -1,0 +1,56 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/CodeInspection/CodeAnnotations/NamespacesWithAnnotations/=ResharperTalk_002EAnnotations/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31898D411B8422488BF630186EEB41C4/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31898D411B8422488BF630186EEB41C4/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31898D411B8422488BF630186EEB41C4/Description/@EntryValue">Extract Class</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31898D411B8422488BF630186EEB41C4/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31898D411B8422488BF630186EEB41C4/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31898D411B8422488BF630186EEB41C4/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/Type/@EntryValue">Everywhere</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31898D411B8422488BF630186EEB41C4/Shortcut/@EntryValue">exclass</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31898D411B8422488BF630186EEB41C4/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31898D411B8422488BF630186EEB41C4/Text/@EntryValue">public string Name { get; set; }&#xD;
+public int Height { get; set; }&#xD;
+public int Weight { get; set; }</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=350E936E3711BB4589FA8AF271010B14/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=350E936E3711BB4589FA8AF271010B14/Description/@EntryValue">Foreach to LINQ</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=350E936E3711BB4589FA8AF271010B14/Shortcut/@EntryValue">ftlinq</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=350E936E3711BB4589FA8AF271010B14/Text/@EntryValue">var listOfNumbers = Enumerable.Range(1, 100);&#xD;
+var sumOfNumbers = 0;&#xD;
+foreach (var i in listOfNumbers)&#xD;
+{&#xD;
+    sumOfNumbers += i;&#xD;
+}&#xD;
+&#xD;
+Console.WriteLine("The sum is: ", sumOfNumbers);</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=350E936E3711BB4589FA8AF271010B14/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=350E936E3711BB4589FA8AF271010B14/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=350E936E3711BB4589FA8AF271010B14/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=350E936E3711BB4589FA8AF271010B14/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=350E936E3711BB4589FA8AF271010B14/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/Type/@EntryValue">Everywhere</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=633726521276CF44A5939D3A8F5D099A/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=633726521276CF44A5939D3A8F5D099A/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=633726521276CF44A5939D3A8F5D099A/Description/@EntryValue">Introduce Variable</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=633726521276CF44A5939D3A8F5D099A/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=633726521276CF44A5939D3A8F5D099A/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=633726521276CF44A5939D3A8F5D099A/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/Type/@EntryValue">Everywhere</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=633726521276CF44A5939D3A8F5D099A/Shortcut/@EntryValue">intvar</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=633726521276CF44A5939D3A8F5D099A/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=633726521276CF44A5939D3A8F5D099A/Text/@EntryValue">var quantity = 10;&#xD;
+var price = 9.95;&#xD;
+var tax = 1.06;&#xD;
+&#xD;
+var totalPrice = quantity*price*tax;</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA6321BE1BFCA24D81A7FCE130E315CE/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA6321BE1BFCA24D81A7FCE130E315CE/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA6321BE1BFCA24D81A7FCE130E315CE/Description/@EntryValue">Copy to local variable</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA6321BE1BFCA24D81A7FCE130E315CE/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA6321BE1BFCA24D81A7FCE130E315CE/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA6321BE1BFCA24D81A7FCE130E315CE/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/Type/@EntryValue">Everywhere</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA6321BE1BFCA24D81A7FCE130E315CE/Shortcut/@EntryValue">ctlocal</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA6321BE1BFCA24D81A7FCE130E315CE/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA6321BE1BFCA24D81A7FCE130E315CE/Text/@EntryValue">var listOfNumbers = Enumerable.Range(1, 100);&#xD;
+var list = new List&lt;Func&lt;string&gt;&gt;();&#xD;
+foreach (var number in listOfNumbers)&#xD;
+{&#xD;
+    list.Add(() =&gt; "The number is " + number);&#xD;
+}</s:String></wpf:ResourceDictionary>
