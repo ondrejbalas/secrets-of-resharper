@@ -1,0 +1,13 @@
+diff a/ResharperTalk/Abstractions/IVehicle.cs b/ResharperTalk/Abstractions/IVehicle.cs	(rejected hunks)
+@@ -1,10 +0,0 @@
+-﻿namespace ResharperTalk.Abstractions
+-{
+-    public interface IVehicle
+-    {
+-        void Alert();
+-        void SetSpeed(int speed);
+-        void Stop();
+-        int CurrentSpeed { get; }
+-    }
+-}
+\ No newline at end of file

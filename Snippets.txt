@@ -10,7 +10,7 @@ Description: Encapsulate field
 
 Section: Context Actions (Quick Fix)
 Hotkey: Alt+Enter
-Description: Convert to auto-property (in file, project, solution)
+Description: Convert to auto-property (in file, folder, project, solution)
 
 
 Section: Context Actions (Quick Fix)
@@ -20,7 +20,7 @@ Description: Create interface (or nested interface)
 
 Section: Context Actions (Quick Fix)
 Hotkey: Alt+Enter
-Description: Rename things that don't follow naming conventions
+Description: Rename things that don't follow naming conventions (in file, folder, project, solution)
 
 
 Section: Context Actions (Quick Fix)
@@ -35,7 +35,7 @@ Description: Move to another file to match type name
 
 Section: Context Actions (Quick Fix)
 Hotkey: Alt+Enter
-Description: Move declarations to namespace
+Description: Move to namespace
 
 
 Section: Context Actions (Quick Fix)
@@ -66,11 +66,6 @@ Description: Remove or add braces. When adding, highlight what you want surround
 Section: Context Actions (Quick Fix)
 Hotkey: Alt+Enter
 Description: Convert a foreach to a LINQ expression [ftlinq]
-
-
-Section: Context Actions (Quick Fix)
-Hotkey: Alt+Enter
-Description: Copy to local variable (when using a foreach variable in a closure) [ctlocal]
 
 
 Section: Context Actions (Quick Fix)
@@ -148,6 +143,11 @@ Hotkey: Shift+Alt+L
 Description: Locate in solution explorer. I find this especially helpful when working on web projects where I bounce around between js files.
 
 
+Section: Search && Navigation
+Hotkey: Alt+`
+Description: Navigate to. If you can't remember the navigation hotkey, this shows you all possible navigation options from the current context.
+
+
 Section: Refactorings
 Hotkey: Ctrl+R,R
 Description: Rename. VS has this refactoring as well but R# improves on it by being able to rename related things (like properties, interfaces, inheritors, etc.)
@@ -155,16 +155,16 @@ Description: Rename. VS has this refactoring as well but R# improves on it by be
 
 Section: Refactorings
 Hotkey: Ctrl+R,M
-Description: Extract Method. 
+Description: Extract Method
 
 
 Section: Refactorings
-Hotkey:  
+Hotkey: Ctrl+Shift+R
 Description: Extract Class [exclass]
 
 
 Section: Refactorings
-Hotkey:  
+Hotkey: Ctrl+Shift+R
 Description: Extract Interface
 
 
@@ -190,12 +190,17 @@ Description: Introduce Variable. Helps simplify complex expressions by refactori
 
 Section: Refactorings
 Hotkey: Ctrl+R,F
-Description: Introduce Field. Like "Introduce Variable" but introduces a field at the class level instead. Can be used to create a constant too.
+Description: Introduce Field. Like "Introduce Variable" but introduces a field at the class level instead.
 
 
 Section: Edits
 Hotkey: Ctrl+Shift+Alt+Arrow
 Description: Rearrange lines of code, blocks, methods, parameters, etc. Can even be used to move bits of code into/out of blocks.
+
+
+Section: Edits
+Hotkey: Ctrl+R,S
+Description: Change Signature
 
 
 Section: Edits
@@ -246,22 +251,3 @@ Description: nguid tab
 Section: Other Cool Stuff
 Hotkey: Ctrl+Shift+F1
 Description: Show Quick Documentation. Shows some information and also links directly to MSDN.
-
-Section: Annotations
-Hotkey:  
-Description: [CanBeNull] Attribute on a method
-
-
-Section: Annotations
-Hotkey:  
-Description: [NotNull] Attribute on a parameter
-
-
-Section: Annotations
-Hotkey:  
-Description: [StringFormatMethod]
-
-
-Section: Code Cleanup
-Hotkey: Ctrl+E,Ctrl+C
-Description: The Code Cleanup option allows to apply some context actions to the entire project/solution. Can be applied to file, folder, project, or solution.

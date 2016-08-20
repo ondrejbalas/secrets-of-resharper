@@ -5,6 +5,6 @@
         void Alert();
         void SetSpeed(int speed);
         void Stop();
-        int TopSpeed { get; }
+        int CurrentSpeed { get; }
     }
 }

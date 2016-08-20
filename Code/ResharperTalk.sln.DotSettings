@@ -1,5 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:Boolean x:Key="/Default/CodeInspection/CodeAnnotations/NamespacesWithAnnotations/=ResharperTalk_002EAnnotations/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=Interfaces/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="I" Suffix="" Style="AaBb" /&gt;</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31898D411B8422488BF630186EEB41C4/@KeyIndexDefined">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31898D411B8422488BF630186EEB41C4/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31898D411B8422488BF630186EEB41C4/Description/@EntryValue">Extract Class</s:String>
@@ -21,7 +22,7 @@ foreach (var i in listOfNumbers)&#xD;
     sumOfNumbers += i;&#xD;
 }&#xD;
 &#xD;
-Console.WriteLine("The sum is: ", sumOfNumbers);</s:String>
+Console.WriteLine("The sum is: {0}", sumOfNumbers);</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=350E936E3711BB4589FA8AF271010B14/Reformat/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=350E936E3711BB4589FA8AF271010B14/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=350E936E3711BB4589FA8AF271010B14/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
