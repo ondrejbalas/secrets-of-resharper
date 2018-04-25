@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
-using ResharperTalk.Classes;
 
 namespace ResharperTalk
 {
@@ -12,25 +10,22 @@ namespace ResharperTalk
 
         static void Main(string[] args)
         {
-            var myList = new LoggingList<string>(new List<string>());
-            myList.Add("hello Music City Code");
+            {
+                var quantity = 10;
+                var price = 9.95;
+
+                var subtotal = quantity * price;
+                var totalPrice = subtotal * Tax;
+            }
+
+            Console.WriteLine("31ED3F15-084A-426A-9901-B5372FAED624");
 
             Console.WriteLine("\nPress enter to exit");
             Console.ReadLine();
         }
 
-        private static double GetValue(int quantity, double price)
+        private static void NewMethod(string something2, string something)
         {
-            var subtotal = quantity*price;
-            var totalPrice = subtotal*Tax;
-            return totalPrice;
-        }
-
-        private static void DoStuff()
-        {
-            var myPattern = new Regex("Hello Music \\w+ Code!");
-            int number = 1 + 2*3*(4 + 5) + 6;
-
             var listOfNumbers = Enumerable.Range(1, 100);
             var sumOfNumbers = listOfNumbers.Sum();
 

@@ -1,82 +1,76 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace ResharperTalk.Classes
 {
     public class LoggingList<T> : IList<T>
     {
-        private IList<T> _listImplementation;
-
-        public LoggingList(IList<T> listImplementation)
+        public LoggingList(IList<T> internalList)
         {
-            _listImplementation = listImplementation;
+            this.internalList = internalList;
         }
 
         public IEnumerator<T> GetEnumerator()
         {
-            return _listImplementation.GetEnumerator();
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return ((IEnumerable) _listImplementation).GetEnumerator();
+            return internalList.GetEnumerator();
         }
 
         public void Add(T item)
         {
-            System.Console.WriteLine($"Hey! I added an item: {item}");
-            _listImplementation.Add(item);
+            Console.WriteLine(item);
+            internalList.Add(item);
         }
 
         public void Clear()
         {
-            _listImplementation.Clear();
+            internalList.Clear();
         }
 
         public bool Contains(T item)
         {
-            return _listImplementation.Contains(item);
+            return internalList.Contains(item);
         }
 
         public void CopyTo(T[] array, int arrayIndex)
         {
-            _listImplementation.CopyTo(array, arrayIndex);
+            internalList.CopyTo(array, arrayIndex);
         }
 
         public bool Remove(T item)
         {
-            return _listImplementation.Remove(item);
+            return internalList.Remove(item);
         }
 
-        public int Count
-        {
-            get { return _listImplementation.Count; }
-        }
+        public int Count => internalList.Count;
 
-        public bool IsReadOnly
-        {
-            get { return _listImplementation.IsReadOnly; }
-        }
+        public bool IsReadOnly => internalList.IsReadOnly;
 
         public int IndexOf(T item)
         {
-            return _listImplementation.IndexOf(item);
+            return internalList.IndexOf(item);
         }
 
         public void Insert(int index, T item)
         {
-            _listImplementation.Insert(index, item);
+            internalList.Insert(index, item);
         }
 
         public void RemoveAt(int index)
         {
-            _listImplementation.RemoveAt(index);
+            internalList.RemoveAt(index);
         }
 
         public T this[int index]
         {
-            get { return _listImplementation[index]; }
-            set { _listImplementation[index] = value; }
+            get => internalList[index];
+            set => internalList[index] = value;
+        }
+
+        private IList<T> internalList;
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return ((IEnumerable) internalList).GetEnumerator();
         }
     }
 }

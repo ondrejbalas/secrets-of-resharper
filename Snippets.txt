@@ -10,11 +10,6 @@ Description: Encapsulate field
 
 Section: Context Actions (Quick Fix)
 Hotkey: Alt+Enter
-Description: Convert to auto-property (in file, folder, project, solution)
-
-
-Section: Context Actions (Quick Fix)
-Hotkey: Alt+Enter
 Description: Create interface (or nested interface)
 
 
@@ -60,7 +55,7 @@ Description: Remove redundant qualifiers (in file, project, solution)
 
 Section: Context Actions (Quick Fix)
 Hotkey: Alt+Enter
-Description: Remove or add braces. When adding, highlight what you want surrounded with braces
+Description: Surround with (highlight what should be surrounded).
 
 
 Section: Context Actions (Quick Fix)
@@ -70,7 +65,7 @@ Description: Convert a foreach to a LINQ expression [ftlinq]
 
 Section: Context Actions (Quick Fix)
 Hotkey: Alt+Enter
-Description: Implement interface
+Description: Implement missing members
 
 
 Section: Context Actions (Quick Fix)
@@ -80,12 +75,7 @@ Description: Implement special interfaces (INotifyPropertyChanged)
 
 Section: Context Actions (Quick Fix)
 Hotkey: Alt+Enter
-Description: Convert to property with change notification
-
-
-Section: Search && Navigation
-Hotkey: Shift+Alt+F12
-Description: Usages of Symbol
+Description: Convert to property with change notification (property must have getter and setter)
 
 
 Section: Search && Navigation
@@ -145,52 +135,62 @@ Description: Locate in solution explorer. I find this especially helpful when wo
 
 Section: Search && Navigation
 Hotkey: Alt+`
-Description: Navigate to. If you can't remember the navigation hotkey, this shows you all possible navigation options from the current context.
+Description: Navigate to. If you can't remember the navigation hotkey, this shows you all possible navigation options from the current context. Exposing APIs.
 
 
-Section: Refactorings
+Section: Search && Navigation
+Hotkey: Alt+Home
+Description: Go to base symbols
+
+
+Section: Search && Navigation
+Hotkey: Alt+End
+Description: Go to derived symbols
+
+
+Section: Search && Navigation
 Hotkey: Ctrl+R,R
 Description: Rename. VS has this refactoring as well but R# improves on it by being able to rename related things (like properties, interfaces, inheritors, etc.)
 
 
-Section: Refactorings
+Section: Search && Navigation
 Hotkey: Ctrl+R,M
 Description: Extract Method
 
 
-Section: Refactorings
+Section: Search && Navigation
 Hotkey: Ctrl+Shift+R
 Description: Extract Class [exclass]
 
 
-Section: Refactorings
+Section: Search && Navigation
 Hotkey: Ctrl+Shift+R
 Description: Extract Interface
 
 
-Section: Refactorings
+Section: Search && Navigation
 Hotkey: Ctrl+R,O
 Description: Move File (or folder). Allows you to move files and folders while applying rename refactorings and checking for broken usages.
 
 
-Section: Refactorings
+Section: Search && Navigation
 Hotkey: Ctrl+R,D
 Description: Safe Delete. Deletes a file if it isn't being used anywhere in the solution
 
 
-Section: Refactorings
+Section: Search && Navigation
 Hotkey: Ctrl+Shift+R
 Description: (Refactor This...) Pull Members Up. Allows you to add an object's members to an abstraction that it is inheriting from.
 
 
-Section: Refactorings
+Section: Search && Navigation
 Hotkey: Ctrl+R,V
 Description: Introduce Variable. Helps simplify complex expressions by refactoring pieces of them into a variable [intvar]
 
 
-Section: Refactorings
+Section: Search && Navigation
 Hotkey: Ctrl+R,F
-Description: Introduce Field. Like "Introduce Variable" but introduces a field at the class level instead.
+Description: Introduce Field. Like "Introduce Variable" but introduces a field at the class level instead. Can be used to create a constant too.
 
 
 Section: Edits
@@ -215,7 +215,7 @@ Description: Constructor. After adding properties to a class, use the constructo
 
 Section: Code Generation
 Hotkey: Alt+Insert
-Description: Delegation members. When implementing the adapter pattern for an existing object, this can be used to write all the boilerplate code to forward those calls to the implementation.
+Description: Delegating members. When implementing the adapter pattern for an existing object, this can be used to write all the boilerplate code to forward those calls to the implementation.
 
 
 Section: Code Generation

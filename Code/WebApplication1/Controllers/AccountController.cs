@@ -17,23 +17,10 @@ namespace WebApplication1.Controllers
     [Authorize]
     public class AccountController : Controller
     {
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> LogOff()
-        {
-            await _signInManager.SignOutAsync();
-            _logger.LogInformation(4, "User logged out.");
-            return RedirectToAction(nameof(HomeController.Index), "Home");
-        }
-
         private readonly UserManager<ApplicationUser> _userManager;
-
         private readonly SignInManager<ApplicationUser> _signInManager;
-
         private readonly IEmailSender _emailSender;
-
         private readonly ISmsSender _smsSender;
-
         private readonly ILogger _logger;
 
         public AccountController(
@@ -51,9 +38,7 @@ namespace WebApplication1.Controllers
         }
 
         //
-
         // GET: /Account/Login
-
         [HttpGet]
         [AllowAnonymous]
         public IActionResult Login(string returnUrl = null)
@@ -63,9 +48,7 @@ namespace WebApplication1.Controllers
         }
 
         //
-
         // POST: /Account/Login
-
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -103,9 +86,7 @@ namespace WebApplication1.Controllers
         }
 
         //
-
         // GET: /Account/Register
-
         [HttpGet]
         [AllowAnonymous]
         public IActionResult Register(string returnUrl = null)
@@ -115,9 +96,7 @@ namespace WebApplication1.Controllers
         }
 
         //
-
         // POST: /Account/Register
-
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -148,8 +127,15 @@ namespace WebApplication1.Controllers
         }
 
         //
-
         // POST: /Account/LogOff
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> LogOff()
+        {
+            await _signInManager.SignOutAsync();
+            _logger.LogInformation(4, "User logged out.");
+            return RedirectToAction(nameof(HomeController.Index), "Home");
+        }
 
         //
         // POST: /Account/ExternalLogin
